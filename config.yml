@@ -1,0 +1,21 @@
+system_monitoring: True
+
+ssh_security:
+    frequency: 2 #no of minutes min 2 to check should be int
+    log_path: '/var/log/auth.log' #log path for SSHD
+    threshold: 3 #no of failure by a particular ip in given frequency minute
+    block_min: 10 #block an ip for x minutes
+    exception: ['202.78.235.140'] #if you don't want a particular ip to get blocked.
+
+
+#taking it as an example to store in local DB. This can be json etc
+databases:
+    host: 'localhost'
+    username: 'root'
+    password: '@k@$#1404'
+    database: 'lambdatest'
+
+alert:
+  slack: False
+  slack_url: ''
+  slack_channel: ''
