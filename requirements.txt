@@ -1,0 +1,4 @@
+configobj==5.0.6
+mysql-connector-python-rf==2.2.2
+psutil==5.7.2
+PyYAML==5.3.1
